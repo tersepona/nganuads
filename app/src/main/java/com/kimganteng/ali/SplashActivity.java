@@ -1,7 +1,7 @@
-package com.kimganteng.myapplication;
+package com.kimganteng.ali;
 
-import static com.kimganteng.myapplication.SettingsAlien.Backup_Initialize;
-import static com.kimganteng.myapplication.SettingsAlien.Select_Backup_Ads;
+import static com.kimganteng.ali.SettingsAlien.Backup_Initialize;
+import static com.kimganteng.ali.SettingsAlien.Select_Backup_Ads;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -35,7 +35,6 @@ public class SplashActivity extends AppCompatActivity {
         InitializeAlienAds.LoadSDK();
         AliendroidInitialize.SelectAdsAdmob(this,Select_Backup_Ads,Backup_Initialize);
         if (SettingsAlien.Select_Open_Ads.equals("1")){
-            AlienNotif.LoadOneSignal("535dc774-9fe3-44ae-839e-09e4133aebe9");
          AlienOpenAds.LoadOpenAds("ca-app-pub-3940256099942544/3419835294",true);
          AlienOpenAds.AppOpenAdManager.showAdIfAvailable(SplashActivity.this, new AlienOpenAds.OnShowAdCompleteListener() {
              @Override

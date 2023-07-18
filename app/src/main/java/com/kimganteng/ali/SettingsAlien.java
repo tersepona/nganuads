@@ -1,6 +1,4 @@
-package com.kimganteng.myapplication;
-
-import java.security.PublicKey;
+package com.kimganteng.ali;
 
 public class SettingsAlien {
 

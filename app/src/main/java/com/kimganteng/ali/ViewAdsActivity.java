@@ -1,29 +1,14 @@
-package com.kimganteng.myapplication;
+package com.kimganteng.ali;
 
-import static com.kimganteng.myapplication.SettingsAlien.AppIDViewAds;
-import static com.kimganteng.myapplication.SettingsAlien.BackupIntertitial;
-import static com.kimganteng.myapplication.SettingsAlien.BackupReward;
-import static com.kimganteng.myapplication.SettingsAlien.Select_Backup_Ads;
+import static com.kimganteng.ali.SettingsAlien.AppIDViewAds;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.aliendroid.alienads.AliendroidBanner;
-import com.aliendroid.alienads.AliendroidIntertitial;
-import com.aliendroid.alienads.AliendroidReward;
-import com.aliendroid.alienads.interfaces.banner.OnLoadBannerAlienView;
-import com.aliendroid.alienads.interfaces.interstitial.load.OnLoadInterstitialAlienView;
-import com.aliendroid.alienads.interfaces.interstitial.show.OnShowInterstitialAlienView;
-import com.aliendroid.alienads.interfaces.rewards.load.OnLoadRewardsAlienView;
-import com.aliendroid.alienads.interfaces.rewards.show.OnShowRewardsAlienView;
 import com.aliendroid.sdkads.config.AppPromote;
-import com.aliendroid.sdkads.interfaces.OnLoadBannerView;
-import com.aliendroid.sdkads.interfaces.OnLoadInterstitialView;
 import com.aliendroid.sdkads.interfaces.OnOpenViewAdListener;
-import com.aliendroid.sdkads.interfaces.OnShowInterstitialView;
 import com.aliendroid.sdkads.interfaces.OnShowRewardsView;
 import com.aliendroid.sdkads.type.view.AlienViewAds;
 

@@ -1,8 +1,8 @@
-package com.kimganteng.myapplication;
+package com.kimganteng.ali;
 
-import static com.kimganteng.myapplication.SettingsAlien.BackupBanner;
-import static com.kimganteng.myapplication.SettingsAlien.MainBanner;
-import static com.kimganteng.myapplication.SettingsAlien.Select_Backup_Ads;
+import static com.kimganteng.ali.SettingsAlien.BackupBanner;
+import static com.kimganteng.ali.SettingsAlien.MainBanner;
+import static com.kimganteng.ali.SettingsAlien.Select_Backup_Ads;
 
 import androidx.appcompat.app.AppCompatActivity;
 

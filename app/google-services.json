@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146616207313",
+    "project_id": "nganu-test-app",
+    "storage_bucket": "nganu-test-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146616207313:android:44e4bd158f6896e648c2f0",
+        "android_client_info": {
+          "package_name": "com.kimganteng.ali"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146616207313-vkn20csbn10a9kuiegb5pqbrlb69t2qd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQt8GlA3YHeEOYGyoi_6_0yyXioH5KWvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146616207313-vkn20csbn10a9kuiegb5pqbrlb69t2qd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

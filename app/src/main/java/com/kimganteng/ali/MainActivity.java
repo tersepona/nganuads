@@ -1,34 +1,35 @@
-package com.kimganteng.myapplication;
+package com.kimganteng.ali;
 
-import static android.content.ContentValues.TAG;
-import static com.kimganteng.myapplication.SettingsAlien.AppIDViewAds;
-import static com.kimganteng.myapplication.SettingsAlien.BackupIntertitial;
-import static com.kimganteng.myapplication.SettingsAlien.BackupReward;
-import static com.kimganteng.myapplication.SettingsAlien.Backup_Initialize;
-import static com.kimganteng.myapplication.SettingsAlien.MainIntertitial;
-import static com.kimganteng.myapplication.SettingsAlien.MainRewards;
-import static com.kimganteng.myapplication.SettingsAlien.Select_Backup_Ads;
-import static com.kimganteng.myapplication.SettingsAlien.Select_Main_Ads;
+import static com.kimganteng.ali.SettingsAlien.BackupIntertitial;
+import static com.kimganteng.ali.SettingsAlien.BackupReward;
+import static com.kimganteng.ali.SettingsAlien.Backup_Initialize;
+import static com.kimganteng.ali.SettingsAlien.MainIntertitial;
+import static com.kimganteng.ali.SettingsAlien.MainRewards;
+import static com.kimganteng.ali.SettingsAlien.Select_Backup_Ads;
+import static com.kimganteng.ali.SettingsAlien.Select_Main_Ads;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.aliendroid.alienads.AlienGDPR;
+import com.aliendroid.alienads.AlienNotif;
 import com.aliendroid.alienads.AliendroidInitialize;
 import com.aliendroid.alienads.AliendroidIntertitial;
 import com.aliendroid.alienads.AliendroidReward;
+import com.aliendroid.alienads.KirimPesan;
+import com.aliendroid.alienads.Pesan;
 import com.aliendroid.alienads.interfaces.interstitial.admob.OnFullScreenContentCallbackAdmob;
-import com.aliendroid.alienads.interfaces.interstitial.load.OnLoadInterstitialAdmob;
 import com.aliendroid.alienads.interfaces.interstitial.show.OnShowInterstitialAdmob;
 import com.aliendroid.alienads.interfaces.rewards.load.OnLoadRewardsAdmob;
 import com.aliendroid.sdkads.config.AppPromote;
 import com.aliendroid.sdkads.config.InitializeAlienAds;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         AppPromote.initializeAppPromote(this);
         InitializeAlienAds.LoadSDK();
         /*
@@ -46,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
             AlienViewAds.OpenApp(MainActivity.this,AppIDViewAds);
         }
          */
+
+        KirimPesan.Siapkirim("Pesan");
+
         AliendroidInitialize.SelectAdsAdmob(this,Select_Backup_Ads,Backup_Initialize);
         AlienGDPR.loadGdpr(this,Select_Main_Ads,true);
         AliendroidIntertitial.LoadIntertitialAdmob(MainActivity.this,Select_Backup_Ads,MainIntertitial,BackupIntertitial,
@@ -104,6 +109,10 @@ public class MainActivity extends AppCompatActivity {
         };
 
     }
+
+
+
+
 
     public void BANNER(View view){
         Intent open = new Intent(MainActivity.this,BannerActivity.class);

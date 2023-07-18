@@ -18,5 +18,6 @@
     <string name="youtube_long_description">We invite you to visit us on our YouTube channel and discover a lot of video challenge games and funny videos.</string>
     <string name="open">Open Ad</string>
     <string name="million_subscribe">Discover more videos !</string>
+    <string name="msg_token_fmt">Token</string>
 
 </resources>

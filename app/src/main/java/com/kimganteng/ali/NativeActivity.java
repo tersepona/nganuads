@@ -1,10 +1,8 @@
-package com.kimganteng.myapplication;
+package com.kimganteng.ali;
 
-import static com.kimganteng.myapplication.SettingsAlien.BackupBanner;
-import static com.kimganteng.myapplication.SettingsAlien.BackupNatives;
-import static com.kimganteng.myapplication.SettingsAlien.MainBanner;
-import static com.kimganteng.myapplication.SettingsAlien.MainNatives;
-import static com.kimganteng.myapplication.SettingsAlien.Select_Backup_Ads;
+import static com.kimganteng.ali.SettingsAlien.BackupNatives;
+import static com.kimganteng.ali.SettingsAlien.MainNatives;
+import static com.kimganteng.ali.SettingsAlien.Select_Backup_Ads;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +10,6 @@ import android.os.Bundle;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.aliendroid.alienads.AliendroidBanner;
 import com.aliendroid.alienads.AliendroidNative;
 import com.aliendroid.alienads.interfaces.natives.OnLoadMediumNativesAdmob;
 
